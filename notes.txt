@@ -1,0 +1,105 @@
+Black box testing: types
+ 
+Smoke Testing:
+Basic Functionality working as expected or not
+Functional Testing: We verify the each and every component here.Text Filed,Drop down,radio button
+ 
+Integration Testing: modules are integrated.
+ 
+System Testing:E2E TESTING
+UAT Testing:  (User Acceptance Testing)
+Within the Organization Business user(BA,Product Owner)
+Alpha Testing:Done by within organization
+Beta Testing:by real time user .
+
+now there is condition like age less than 18 entry fees is 20, age between 18 
+to 60 fees is 30 and above 60 is fees of 10
+
+evquvalence is best .
+
+Q #1) One of the fields on a form contains a text box that accepts numeric 
+values in the range of 18 to 25. 
+Identify the invalid Equivalence class.
+
+a) 17
+b) 19
+c) 24
+d) 21
+
+answer a)17
+
+In an Examination, a candidate has to score a minimum of 24 marks in order 
+to clear the exam. The maximum that he can score is 40 marks.  
+Identify Valid Equivalence values if the student clears the exam.
+
+a) 22,23,26
+b) 21,39,40
+c) 29,30,31
+d) 0,15,22
+
+answer c) 29,30,31
+
+The Switch is switched off once the temperature falls below 18 and then 
+it is turned on when the temperature is more than 21. When the temperature 
+is more than 21. 
+Identify the Equivalence values which belong to the same class.
+
+a) 12,16,22
+b) 24,27,17
+c) 22,23,24
+d) 14,15,19
+
+answer c)22,23,24
+
+Q #9) Given the following specifications, which of the following values 
+for age are in the SAME equivalence partition?
+If you are less than 18, you are too young to be insured.
+Between 18 and 30 inclusive, you will receive a 20% discount.
+Anyone over 30 is not eligible for a discount.
+a) 17, 18, 19
+b) 29, 30, 31
+c) 18, 29, 30
+d) 17, 29, 31
+
+answer c) 18,29,30
+
+
+http://demowebshop.tricentis.com/
+
+https://onedrive.live.com/edit?id=49AC4387E284BF26!1378&resid=49AC4387E284BF26!1378&ithint=file%2cxlsx&authkey=!AI9B4sInUM-KkY8&wdo=2&cid=49ac4387e284bf26
+
+
+[10:39 AM] Plabani (Guest)
+Q #1) One of the fields on a form contains a text box that accepts numeric values in the range of 18 to 25. Identify the invalid Equivalence class.
+[10:40 AM] Plabani (Guest)
+a) 17
+b) 19
+c) 24
+d) 21
+[10:40 AM] Plabani (Guest)
+In an Examination, a candidate has to score a minimum of 24 marks in order to clear the exam. The maximum that he can score is 40 marks.  Identify Valid Equivalence values if the student clears the exam.
+[10:40 AM] Plabani (Guest)
+a) 22,23,26
+b) 21,39,40
+c) 29,30,31
+d) 0,15,22
+[10:41 AM] Plabani (Guest)
+The Switch is switched off once the temperature falls below 18 and then it is turned on when the temperature is more than 21. When the temperature is more than 21. Identify the Equivalence values which belong to the same class.
+[10:41 AM] Plabani (Guest)
+a) 12,16,22
+b) 24,27,17
+c) 22,23,24
+d) 14,15,19
+[10:42 AM] Plabani (Guest)
+Q #9) Given the following specifications, which of the following values for age are in the SAME equivalence partition?
+If you are less than 18, you are too young to be insured.
+Between 18 and 30 inclusive, you will receive a 20% discount.
+Anyone over 30 is not eligible for a discount.
+a) 17, 18, 19
+b) 29, 30, 31
+c) 18, 29, 30
+d) 17, 29, 31
+
+
+https://drive.google.com/file/d/10H6geEkgTzJUgMocWeObD4H9DXUWEyz3/view?usp=sharing
+

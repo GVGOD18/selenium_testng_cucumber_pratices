@@ -1,0 +1,1327 @@
+https://mcqtest.in/mcq-questions-answers/software-testing/manual-testing/1
+
+1)When should unit testing be preformed?
+
+B) during the development of an application
+it can helps to identify the and fix issuse eraly in the development
+process, reducing the likehood of defects carrying forward into later 
+stages of testing or production.
+
+
+2)White Box Techniques are also called as
+
+D) Both B & C structural testing and clear box testing
+because testing process or tester examining  knows the internal structure 
+of the system or
+application .
+
+3) B) assertion testing involves verifying if the conditions within 
+the code confirm the product requirement. it aims to ensure that
+the system behaves as expected under various conditions and conditions or
+assertions specified in the requirements are met.
+
+4) A
+
+5) C
+
+6) D
+
+7) c
+
+8) d
+
+9) D
+
+10)  C 
+
+11) A
+
+12) C
+
+coupling is used for indicating the dependency between components or 
+program and cohesion is used for indicating the relationship 
+between the modules both is used in casue and effect graph to 
+representation of the relationship or dependency between modules.
+
+13) A
+
+14) A
+
+15) C
+
+16) B
+
+17) B
+
+18) A
+
+19) D
+
+20) C
+
+
+https://www.javatpoint.com/software-testing-mcq
+
+1) Which methodology is used to performed Maintenance testing?
+
+Breadth test and depth test
+Confirmation testing
+Retesting
+Sanity testing
+
+Answer: (a) Breadth test and depth test
+
+Explanation: The maintenance testing is performed during the development, 
+migration, and modification cycle. It is done on the previously 
+deployed software 
+where its needs to be improved, altered or migrated to other hardware.
+
+2) Which of the following is not part of the Test document?
+
+Test Case
+Requirements Traceability Matrix [RTM]
+Test strategy
+Project Initiation Note [PIN]
+
+Answer: (d) Project Initiation Note [PIN]
+
+Explanation: The test documentation is the document which is created during
+ or before the testing of a software application. The entire test 
+execution process depends on the complication of the test document.
+
+3) Which term is used to define testing?
+
+Evaluating deliverable to find errors
+Finding broken code
+A stage of all projects
+None of the above
+
+Answer: (a) Evaluating deliverable to find errors
+
+Explanation: Software testing is a process of classifying the correctness 
+of software by seeing its all attributes and assessing the execution of 
+software components to find the software bugs or errors.
+
+4) Which of the following is not a valid phase of SDLC (Software Development Life Cycle)?
+
+Testing Phase
+Requirement Phase
+Deployment phase
+Testing closure
+
+Answer: (d) Testing Closure
+
+Explanation: SDLC defines various phases of software development and 
+the order of execution of phases. Software development life cycle is 
+a process that creates a structure for the development of software.
+
+5) Which of the following testing is also known as white-box testing?
+
+Structural testing
+Error guessing technique
+Design based testing
+None of the above
+
+Answer: (a) Structural Testing
+
+Explanation: Structural testing is also known as a White box or Clear box,
+ or Glass box testing. In structural testing, we can understand what is 
+happening inside the application or the software.
+
+6) Which of the following testing is related to the boundary value analysis?
+
+White box and black box testing
+White-box testing
+Black box testing
+None of the above
+
+Answer: (c) Black Box testing
+
+Explanation: Boundary value analysis is one of the widely used case design 
+techniques for black-box testing. It is used to test boundary values 
+because the input values near the boundary have higher chances of error. 
+Boundary values are those that contain the upper and lower limit of a 
+variable.
+
+7)Functional testing is a ------?
+
+Test design technique
+Test level
+SDLC Model
+Test type
+
+Answer: (d) Test Type
+
+Explanation: It is a type of software testing, which is used to verify the 
+functionality of the software application, whether the function is working 
+according to the requirement specification. It is performed as black-box 
+testing, 
+which verifies the functionality of the application.
+
+Answer: (d) All of the above
+
+Explanation: Integration, Unit and System testing are various testing levels
+ where the Unit testing is used to test each unit or an individual component
+ of the software application.
+
+The integration testing is used only after the functional testing is 
+completed on each module of the application. And system testing is 
+end-to-end testing, where the testing environment is similar to the 
+production environment.
+
+9) Which of the following is not a part of STLC (Software Testing Life Cycle)?
+
+Testing Planning
+Requirement Gathering
+Test Design
+Testing closure
+
+Answer: (b) Requirement Gathering
+
+Explanation: The software testing procedure is also known as Software 
+Testing Life Cycle (STLC), which contains various phases of the testing 
+process. And all activities are done to improve the quality of the 
+software product.
+
+10) Sanity testing is a ------?
+
+Test type
+Test Execution Level
+Test Level
+Test design technique
+
+Answer: (b) Test Execution level
+
+Explanation: As soon as the bug fixes are done, we will perform the Sanity 
+testing. It is narrow, deep. Sanity testing's primary objective is to 
+ensure that all the defects have been fixed and no further issues come 
+into existence due to these changes.
+
+11) White box testing techniques are?
+
+Statement coverage testing
+Decision coverage testing
+Data flow testing
+All of the above
+
+Answer: (d) All of the above
+
+Explanation: In software testing, the statement coverage, decision coverage,
+ data flow is part of the white-box testing technique.
+
+12) In which environment we can performed the Alpha testing?
+
+User's end
+Developer's end
+User's and developer's end
+None of the above
+
+Answer: (b) Developer's end
+
+Explanation: Alpha testing is conducted in the organization and tested by a 
+representative group of end-users at the developer's end, where the 
+developers observe the users and write down the problems. Alpha testing is 
+simulated or real operational testing at an in-house site.
+
+13) Which of the below is not a part of the Test Plan?
+
+Schedule
+Risk
+Incident reports
+Entry and exit criteria
+
+Answer: (c) Incident Reports
+
+Explanation: The test plan is a base of every software's testing. It is a 
+detailed document, which describes software testing areas and activities. 
+It outlines the test strategy, objectives, test schedule, required resources
+ (human resources, software, and hardware), 
+test estimation and test deliverables.
+
+14) What is the key objective of Integration testing?
+
+Design Errors
+Interface Errors
+Procedure Errors
+None of the mentioned
+
+Answer: (b) Interface Error
+
+Explanation: Whenever there is a clear relationship between modules, we go 
+for the integration testing. And the main purpose of the integration testing
+ level is to expose the faults at the time of interaction between integrated
+ components or units.
+
+15) Exploratory testing is a -----?
+
+Experience-based Test Design Technique
+White Box Test Design Technique
+Black Box Test Design Technique
+Grey Box Test Design Technique
+
+Answer: (a) Experience-based Test Design Technique
+
+Explanation: Whenever the requirement does not exist, we do one round of 
+exploratory testing. In this testing, we will be exploring the application 
+in all possible ways, understanding the application's flow, preparing a 
+test document and then testing the application.
+
+16) What is the best time to perform Regression testing?
+
+After the software has been modified
+As frequently as possible
+When the environment has been modified
+Both option a & c
+
+Answer: (d) Both option a & c
+
+Explanation: Regression testing is used to authenticate a code change in 
+the software that does not impact the product's existing functionality. 
+Regression testing can be performed on a new build when there is a 
+significant change in the original functionality. 
+It ensures that the code still works when the changes are occurring.
+
+17) Does the customer get a 100% bug-free product?
+
+Product is old
+Developers are super
+The testing team is not good
+All of the above
+
+Answer: (c) The testing team is not good
+
+Explanation: Sometimes, the fundamentals of software testing define 
+that no product has zero bugs.
+
+18) Cyclomatic complexity is?
+
+White-box testing
+Black box testing
+Grey box testing
+All of the above
+
+Answer: (a) White box testing
+
+Explanation: Cyclomatic complexity is a software metric, which is used 
+to measure the complexity of a program. It gives the minimum number of 
+paths that can generate all possible paths through the module.
+
+19) Which of the following is not part of the Test type?
+
+Function testing
+System testing
+Statement testing
+Database testing
+
+Answer: (c) Statement testing
+
+Explanation: Testing is a group of techniques to determine the application's
+ correctness under the predefined script, but testing cannot find all the 
+defects in the application. Testing includes an examination of code and 
+the execution of code in various environments, conditions, and all the 
+examining aspects of the code.
+
+20) Which Test Document is used to define the Exit Criteria of Testing?
+
+Defect Report
+Test Summary Report
+Test Case
+Test Plan
+
+Answer: (d) Test Plan
+
+Explanation: The Exit criteria of the functional testing should be followed
+ because the percentage (%) of exit criteria are decided by the meeting 
+with both development and test manager because their collaboration can 
+achieve the percentage. And When all 
+the test cases are executing, most of the test cases must be passed.
+
+21) Impact analysis helps us to decide which of the following testing?
+
+Exit Criteria
+How much regression testing should be done?
+Different Tools to perform Regression Testing
+How many more test cases need to write?
+
+Answer: (b) how much regression testing should be done
+
+Explanation: In regression testing, once we understand the new requirements,
+ we will perform one round of impact analysis to avoid the major risk. The 
+impact analysis is done by the customer based on their business knowledge, 
+the developer based on their coding knowledge. Most importantly, 
+it is done by the test engineer because they have product knowledge.
+
+22) Which testing technique is used for usability testing?
+
+White-box testing
+Grey box testing
+Black Box testing
+Combination of all
+
+Answer: (c) Black box testing
+
+Explanation: Usability testing is used to checks the defect in the 
+end-user interaction of software or the product. It makes sure that the 
+developed software is easy while using the system without facing any 
+problem and makes end-user life easier.
+
+23) Which is not the right approach of Incremental testing approach?
+
+Big bang approach
+Top-down approach
+Functional incrimination
+Bottom-up approach
+
+nswer: (a) Big bang approach
+
+Explanation: The Incremental testing approach is used whenever there is a 
+solid relationship between the dependent modules. In this, modules are 
+added in ascending order one by one or according to need. Generally, two 
+or more than two modules are added and tested to control the correctness 
+of functions.
+
+24) In which environment we can performed the Beta testing?
+
+User's and developer's end
+Developer's end
+User's end
+None of the above
+
+Answer: (c) User's end
+
+Explanation: Beta testing is an integral part of external user acceptance 
+testing, where real users perform this testing. It is implemented after 
+the alpha testing. Beta testing is the last phase of the testing carried 
+out at the client's or user's end.
+
+25) What is error guessing in software testing?
+
+Test control management techniques
+Test verification techniques
+Test execution techniques
+Test case design/ data management techniques
+
+Answer: (d) Test case design/ data management techniques
+
+Explanation: When there is no specific method for identifying the error, 
+we go for the Error guessing technique. It is totally based on the 
+experience of the test analyst, where the tester uses the experience to 
+guess the problematic areas of the software.
+
+26) After which phase, we can proceed to the white box testing?
+
+After the coding phase
+After designing phase
+After SRS creation
+After the installation phase
+
+Answer: (a) After the coding phase
+
+Explanation: Generally, the white box testing was performed after the 
+programming phase because this type of testing required the programming 
+skills to design test cases. The Developers perform the white box testing 
+to test every line of the program's code and then send the application or 
+the software to the testing team for further process.
+
+27) Which of the following is not another name of white box testing?
+
+Structural testing
+Behavioral testing
+Glass box testing
+None of the mentioned
+
+Answer: (b) Behavioral Testing
+
+Explanation: White box testing is known as glass box testing, structural 
+testing, clear box testing, open box testing and transparent box testing.
+
+28) The test levels are performed in which of the following order?
+
+Unit, Integration, System, Acceptance
+It is based on the nature of the project
+Unit, Integration, Acceptance, System
+Unit, System, Integration, Acceptance
+
+Answer: (b) It is based on the nature of the project
+
+Explanation: The Test levels can always be restructured or combined based on n the nature of a project or system planning.
+
+29) Define the term failure?
+
+A human action that produces an incorrect result.
+Its departure from specified behavior
+Found in the software; the result of an error.
+It is procedure or data definition in a computer database.
+
+Answer: (b) Its departure from specified behavior
+
+Explanation: In software testing, a software bug can also be issue, error, 
+fault, or failure where lots of defect leads to failure of the software.
+
+30) "V" model is?
+
+Test type
+Test Level
+Test design technique
+Software development testing (SDLC) model
+
+Answer: (d) Software development testing (SDLC) model
+
+Explanation: Whenever we have a large and complex application, we go for 
+the V model. In the V model, firstly, all the activities go in the 
+downward direction, and at one point in time, it starts moving in the 
+upward direction, and to re-use the test document for the testing process 
+and forms a V shape.
+
+31) Which of the below testing is executed without documentation and planning is known as?
+
+Regression Testing
+Adhoc Testing
+Unit Testing
+None of the above
+
+Answer: (b) Adhoc testing
+
+Explanation: Whenever we have to randomly check the application 
+without following any sequence or procedure, we do one round of 
+Adhoc testing. Since the user doesn't know how to use the application, 
+they may use it randomly and find some issues. Adhoc testing is also known 
+as negative testing because we test the application against the client's 
+requirements.
+
+32) Which of the below testing is related to Non-functional testing?
+
+Unit Testing
+Black-box Testing
+Performance Testing
+None of the above
+
+Answer: (c) Performance testing
+
+Explanation: Non-functional testing is testing where the tester will 
+test the non-functional parameters, for example, performance, reliability,
+ load test, and accountability of the software or application. And 
+Performance testing is testing where we check the behavior of an 
+application by applying some load.
+
+33) Which of the below testing is related to black-box testing?
+
+Boundary value analysis
+Code path analysis
+Basic path testing
+None of the above
+
+Answer: (a) Boundary value analysis
+
+Explanation: The Black box testing is testing where we examine the 
+software's functionality without looking into its internal structure or 
+coding. And the boundary value analysis is used to test boundary values 
+as the input values near the boundary have higher chances of error. And 
+it is one of the widely used case design techniques for black-box testing.
+
+34) Which of the following testing is also called Acceptance testing?
+
+Beta testing
+White-box testing
+Grey box testing
+Alpha testing
+
+Answer: (a) Beta testing
+
+Explanation: The user acceptance testing is done once the application 
+is bug-free because no customer accepts the application blindly before 
+using it. Hence, they perform one round of testing for their satisfaction. 
+And Beta testing is one essential part of Acceptance Testing, which is 
+performed before releasing the software.
+
+35) -------- testing is used to check the code?
+
+Grey box testing
+Black box testing
+White-box testing
+Red box testing
+
+Answer: (c) White-Box testing
+
+Explanation: The white box testing is testing where the developer will 
+test every line of the program's code. To perform the white box testing, 
+his/her aware of programming skills to design test cases.
+
+36) The Regression test case is not a --------?
+
+Tests that focus on the software components, which have been modified.
+Low-level components are combined into clusters, which perform a specific software sub-function.
+Additional tests that emphasize software functions, which are likely to be affected by the change.
+A representative sample of tests, which will exercise all software functions.
+
+
+Answer: (b) Low-level components are combined into clusters that perform a specific software sub-function.
+
+37) Generally, which testing is used when shrink-wrapped software products are being established and part of an integration testing?
+
+Integration Testing
+Validation testing
+Regression Testing
+Smoke testing
+
+Answer: (d) Smoke testing
+
+Explanation: The smoke testing is used to test the basic and critical 
+feature of an application before doing one round of deep, rigorous 
+testing or checking all possible positive and negative values. In this 
+testing, we do not require to design test cases.
+
+38) Which of the following statement is used to discover errors in the test case?
+
+Incorrect logical operators or precedence
+Non-existent loop termination
+Comparison of different data types
+All of the above
+
+Answer: (b) Non-existent loop termination
+
+Explanation: The test case is specifying as a group of conditions under 
+which a tester controls whether a software application is working as per 
+the customer's requirements or not. And the test case provides us 
+complete information about testing strategy, testing process, 
+preconditions, and expected output.
+
+39) The Decision table testing is a ----------?
+
+White box Test Design Technique
+Black Box Test Design Technique
+Experience-based Test Design Technique
+Grey Box Test Design Technique
+
+Answer: (b) Black-box test design technique
+
+Explanation: The Decision table technique is one of the most important 
+used case design techniques for black-box testing. It is a systematic 
+approach where several input combinations and their respective system
+ behavior are captured in a tabular form. The Decision table technique
+ is suitable for the functions, which have a logical relationship between
+ two and more than two inputs.
+
+40) When we have to stop the testing?
+
+The faults have been fixed
+All the tests run
+The time completed
+The risk is resolved
+
+Answer: (d) The risk is resolved.
+
+Explanation: Once the application's functionality is stable, the risk is 
+resolved, when the time is less, we test the necessary features, and when 
+the essential feature itself is not working correctly, we can stop the 
+testing.
+
+41) ---------- are those software mistakes that occurred during the coding phase?
+
+Defects
+Failures
+Errors
+Bugs
+
+Answer: (d) Bugs
+
+Explanation: The Bug is the informal name of defects, which means 
+that software or application is not working as per the requirement. 
+The bug occurred when developers made any mistake or error while 
+developing the product. And the bug had various names in different 
+companies such as error, issues, problem, fault, mistake, etc.
+
+
+42) Which of the following is not a valid software testing technique?
+
+Inspections
+Data flow analysis
+Error guessing
+Walkthrough
+
+Answer: (c) Error guessing
+
+Explanation: Error guessing is a technique in which there is no specific 
+method for identifying the error. It completely depends on the tester and 
+type of experience in the previous testing involvements because it does 
+not follow any method and guidelines. The error guessing technique deals 
+with all possible errors that cannot be identified as informal testing.
+
+
+43) Define the term verification in V and V model?
+
+Checking that we are building the system right
+Making sure that it is what the user wants
+Performed by an independent test team
+Checking that we are building the right system
+
+Answer: (a) Checking that we are building the system right
+
+Explanation: The entire V model executes in two-phase; 
+the complete review process is done in the verification phase. 
+We can say that the verification is used to check that we are 
+building the system right.
+
+44) What is the full form of SRS?
+
+Software respond system
+Software requirements specification
+System responds software
+System requirements specification
+
+Answer: (B) Software requirements specification
+
+Explanation: SRS [Software Requirement Specifications] is a document 
+where all the details are converted to the detail document, which can be 
+understood by the developers and the test engineers.
+
+45) What is the main task of test planning?
+
+Measuring and analyzing results
+Evaluating exit criteria and reporting
+Determining the test approach
+Preparing the test specification
+
+Answer: (C) Determining the test approach.
+
+Explanation: It is a detailed document, which describes software testing areas and activities. The test approach is used to define the application's flow while performing testing and for future reference.
+
+46) Which of the below statement is true about the Equivalence Partitioning technique?
+
+A black box testing technique appropriate to all levels of testing.
+A white box testing technique appropriate for component testing.
+The black box testing technique is used only by developers.
+A black box testing technique that can only be used during system testing.
+
+Answer: (a) A black box testing technique appropriate to all levels of testing.
+
+Explanation: The equivalence partitions are derived from the requirements 
+and specifications of the software. It is a software testing technique 
+in which input data is divided into partitions of valid and invalid values,
+ and all partitions must exhibit the same behavior.
+
+47) ITG stands for------?
+
+Integration Testing Group
+Instantaneous Test Group
+Independent Test Group
+Individual Testing Group
+
+Answer: (c) Independent Test Group.
+
+Explanation: The ITG (Independent Test Group) is where the third party solves any problem to create objectivity.
+
+48) Which of the following testing is refers to as a fault-based testing technique?
+
+Stress testing
+Mutation testing
+Beta testing
+Unit testing
+
+Answer: (b) Mutation testing
+
+Explanation: Mutation testing is a fault-based testing technique where we insert errors purposely into a program (under test) to verify whether the existing test case can detect the error or not. In this testing, the program's mutant is created by making some modifications to the original program.
+
+49) ------ are the problems that threaten the success of a project but which has not yet happened.
+
+Risk
+Bug
+Failure
+Error
+
+Answer: (a) Risk
+
+Explanation: Risk is the challenge that we need to face to test the 
+application in the current release, and if the assumptions fail, then 
+the risks are involved, such as the effect for an application, release 
+date becomes postponed.
+
+50) What is component testing?
+
+White-box testing
+Grey box testing
+Black box testing
+Both a & c
+
+Answer: (a) White box testing
+
+Explanation: The component testing is based on an application's inner 
+workings and revolves around internal structure testing. And the developer
+ performs the white box/ component testing because the developer has the 
+internal knowledge of the application.
+
+
+https://t4tutorials.com/manual-testing-mcqs-software-testing/
+
+_________is / are not part of Specification Based Testing.
+a. Data Flow
+b. State Transition
+c. Decision Table
+d. Boundary Value Analysis
+e. None of these
+Multiple Choice Question Answer: a
+
+Confidence Testing refers to which one?
+a. Retesting
+b. Smoke Testing
+c. Regression Testing
+d. All of these.
+e. None of these
+Multiple Choice Question Answer: b
+
+Component Drivers are not needed for which one?
+a. Top-Down
+b. Big-Bang
+c. Modified Top-Down
+d. Modified Sandwich
+e. None of these
+Multiple Choice Question Answer: a
+
+______ is not a part of the Decision Table.
+a. Driver portion
+b. Stub portion
+c. Condition portion
+d. Action portion
+e. None of these
+Multiple Choice Question Answer: a
+
+Test plans are based on which one?
+a. Project Plan
+b. Business Plan
+c. Support Plan
+d. All of these
+e. None of these
+Multiple Choice Question Answer: a
+
+Which of the following is done by suddenly increasing the load for observing the behavior of the system and a small period of time.
+a. Stress Testing
+b. Spike Testing
+c. Load Testing
+d. All of these
+e. None of these
+Multiple Choice Question Answer: b
+
+______ is / are not a Iterative Model.
+a. V model
+b. Incremental
+c. RAD
+d. Spiral Model
+e. None of these
+Multiple Choice Question Answer: a
+
+______ is not true in case of Unit Testing.
+a. by the development team it is usually conducted.
+b. It can’t be expected for catching every error in a program.
+c. if individual units of source code are fit for use in this tester evaluates.
+d. It decreases the software development speed.
+e. None of these
+Multiple Choice Question Answer: d
+
+Focus Testing comes under which one?
+a. Usability Testing
+b. Acceptance Testing
+c. Performance Testing
+d. Component Testing
+e. None of these
+Multiple Choice Question Answer: a
+
+Sanity test is __________ is not true in case of Sanity Testing?
+a. a narrow regression testing.
+b. usually unscripted.
+c. High Level Testing.
+d. a cursory testing.
+e. None of these
+Multiple Choice Question Answer: c
+
+A minimum of four test data are available in which one?
+a. Equivalence Class Partitioning
+b. Boundary Value Analysis
+c. Both A and B
+d. None of these.
+e. None of these
+Multiple Choice Question Answer: b
+
+STLC is related to which model?
+a. Waterfall Model
+b. V Model
+c. RAD Model
+d. Spiral Model
+e. None of these
+Multiple Choice Question Answer: b
+
+Testing cannot be performed by QA Team is________.
+a. Equivalence Partitioning Testing
+b. End-to-end Testing
+c. Destructive Testing
+d. Fuzz Testing
+e. None of these
+Multiple Choice Question Answer: d
+
+Which of the following top-down Design does not require.
+a. Step-wise Refinement
+b. Modularity
+c. Flow charting
+d. Loop-invariants
+e. None of these
+Multiple Choice Question Answer: d
+
+Which of the following is the first component of the DFD?
+a. Level
+b. Flow
+c. Entity
+d. Process
+e. None of these
+Multiple Choice Question Answer: d
+
+______ coupling should be avoided in software.
+a. Content Coupling
+b. Data coupling
+c. Control coupling
+d. Stamp coupling.
+e. None of these
+Multiple Choice Question Answer: a
+
+Cyclomatic Complexity cannot be applied in which one?
+a. Reverse engineering
+b. Risk Management
+c. Test Planning
+d. Re-engineering
+e. None of these
+Multiple Choice Question Answer: a
+
+_____________ is the order of Priority Testing.
+a. System>>Acceptance>>Integration
+b. Unit>> System>>Acceptance Testing.
+c. System>>Integration>> Acceptance Testing.
+d. Unit >>Integration >>System Testing.
+e. None of these
+Multiple Choice Question Answer: d
+
+On which of the following requirements Engineering is not a concern?
+a. Requirement Analysis
+b. Requirement Elicitation
+c. Requirement Design
+d. Requirement Documentation
+e. None of these
+Multiple Choice Question Answer: c
+
+Which of the following will be correct when an expected result is not specified in the test case template.
+a. if the test has passed or failed it may be difficult to determine.
+b. It may be difficult to repeat a test.
+c. We cannot run the test.
+d. We cannot automate the user inputs.
+e. None of these
+Multiple Choice Question Answer: b but answer is a.
+
+A test technique that includes testing with differenet ranges of valid and invalid inputs a particular module or component functionality extensively is known as?
+
+a. Monkey Testing
+b. Gorilla Testing
+c. Agile Testing
+d. Baseline Testing
+e. None of these
+Multiple Choice Question Answer: b
+
+Which of the following is end result of Software Requirement Analysis?
+a. Usability and Reliability
+b. Architectural and Structural
+c. Functional and Behavioral
+d. Algorithmic and Data Structure
+e. None of these
+Multiple Choice Question Answer: c
+
+_______ is not Data Driven Testing.
+a. Ramp Testing
+b. Fuzz Testing
+c. Negative Testing
+d. Retesting
+e. None of these
+Multiple Choice Question Answer: A
+
+Which of the following is an existing defect that has not yet caused a failure because the conditions that is required for invoking the defect are not meet?
+a. Latent defect
+b. Masked defect
+c. Both of these
+d. None of these.
+e. None of these
+Multiple Choice Question Answer: a
+
+______ is the odd one out.
+a. Client or development side
+b. Beta release
+c. Client side
+d. Beta testing
+e. None of these
+Multiple Choice Question Answer: a
+
+Which of the following is the difference between Retesting and Regression Testing?
+
+a. regression testing is done earlier where as retesting is done after faults are fixed
+b. regression testing promises that the original fault has been removed retesting looks for unexpected side-effects.
+c. regression testing looks for unexpected side-effects whereas retesting ensures the original fault has been removed.
+d. retesting is doneby developers whereas regression testing is done by independent testerse. None of these
+Multiple Choice Question Answer: c
+
+Which of the following is assertion Testing?
+
+a. if the conditions confirm the product requirements verifying.
+b. Performed without planning and documentation.
+c. Testing technique is similar for uniting testing in that it targets the system at code level.
+d. by setting it on true/false testing where each condition/decision is executed
+e. None of these
+
+Multiple Choice Question Answer: a
+
+by _________ type of Decision Tree data classification is done.
+a. Regression Tree
+b. Boosted Tree
+c. Bagging Tree
+d. Classification Tree
+e. None of these
+Multiple Choice Question Answer: d
+
+In Requirement Phase, Design Phase, Coding Phase, and Implementing Phase ____________ is the ratio of effort needed to fix a defect.
+a. 1:6:10:1000
+b. 1:4:7:10
+c. 1:8:12:100
+d. 1:10:100:1000
+e. None of these
+Multiple Choice Question Answer: a
+
+Coupling and Cohesion are explained by which one?
+a. Software Requirement Specification
+b. Structure Graph
+c. Cause-Effect Graph
+d. Dependency Matrix
+e. None of these
+Multiple Choice Question Answer: c
+
+Defects can be found more easily in which one?
+a. Big Bang Testing.
+b. Top-down Integration Testing
+c. Bottom-up Integration Testing
+d. Sandwich Integration Testing
+e. None of these
+Multiple Choice Question Answer: c
+
+Which may affect the application integrity and stability ____________ testing application security has the purpose to prevent problems.
+a. Ramp Testing
+b. Vulnerability Testing
+c. Penetration Testing
+d. Fuzz Testing
+e. None of these
+Multiple Choice Question Answer: b
+
+
+https://www.careerride.com/mcq/use-cases-and-decision-table-software-testing-mcq-questions-and-answers-193.aspx
+
+1)   Which of the following Use Cases are useful?
+- Published on 19 Oct 15
+
+a. Performance Testing
+b. Business Scenarios
+c. Static Testing
+d. Unit Testing
+
+ANSWER: Business Scenarios
+
+2)   Which is/are parts of State Transition Model?
+- Published on 03 Aug 15
+
+a. The states that the software may occupy
+b. The transition from one state to another
+c. The event that cause a transition
+d. The action that result from transition
+e. All of the above
+
+ANSWER: All of the above
+
+3)   For retail shopping software which table would be example of Decision Table?
+- Published on 03 Aug 15
+
+a. A table containing rules of discount.
+b. A table containing rules for interfaces between components.
+c. A table containing rule of employee behavior.
+d. A table containing rules for combination of input.
+
+ANSWER: A table containing rules of discount.
+
+4)   When different combination of input requires different combination of actions,Which of the following technique is used in such situation?
+- Published on 30 Jul 15
+
+a. Boundary Value Analysis
+b. Equivalence Partition
+c. Decision Table
+d. Decision Coverage
+
+ANSWER: Decision Table
+
+https://www.careerride.com/view/equivalence-partitioning-and-boundary-value-analysis-mcqs-18832.aspx
+
+1. A shopping website gives discount based on prices of total purchased 
+items. Suppose customer purchases are below 2000 rs. then no discount,for 
+purchases till 20000, it gives 10% discount and above 20000 it gives 15% 
+discount. Which of the following sets of values lie in 3 different 
+equivalence classes?
+
+a) 1800,2000,8000
+b) 2001,10000,20002
+c) 1800, 2003,58,000
+d) 100,1800,20001
+
+ANSWER: c) 1800, 2003,58,000
+actually non of this  is correct answers
+
+2. In final examination, student can get 0 to 3000 marks. Students has to get 50% in order to pass the examination. If he gets 2000 or below that he will be given C grade ,if he gets 2000-2500 then he will get B grade and above that he is eligible for A grade. Using boundary value analysis what will be the values for testing if we are testing for C grade?
+
+a) 1500,1501,1999,2000
+b) 1499,1500,1999,2000
+c) 1500,1501,2000,2001
+d) 1499,1500,2000,2001
+
+ANSWER: d) 1499,1500,2000,2001
+
+3. A theme park charges entry fee based on age group. For children below 3 it charges nothing, for 3-10 it charges 500/-, for 10-18 it charges 800/-,then for 18-60 it charges 1000 and above 60 it charges 500 again. Using boundary value analysis, what will be the values to test if person pays 500 rs entry fee?
+
+a) 0,2,3
+b) 2,3,10,11,59,60,100,101
+c) 2,3,10,11,59,60,100,101
+d) 59,60,100,101
+
+ANSWER: c) 2,3,10,11,59,60,100,101
+
+4. A city field in software accepts 3 to 25 alpha characters only. Using BVA technique what will be possible number of combinations?
+
+a) 3,4,24,25
+b) 2,3,25,26
+c) 2,3,24,25
+d) 3,5,25,26
+
+ANSWER: b) 2,3,25,26
+
+5. Which is/are the characteristics of equivalence partitioning?
+
+a) In equivalence-partitioning technique we need to test only one condition from each partition.
+
+
+b) If one condition in a partition works, we assume all of the conditions in that partition will work.
+
+
+c) if one of the conditions in a partition does not work, then we assume that none of the conditions in that partition will work.
+d) Equivalence partitions and equivalence classes both terms mean exactly the same thing.
+e) All of the above
+
+ANSWER: e) All of the above
+
+6. Equivalence partitioning and boundary value analysis techniques are used only during system testing. True or false.
+
+a) True
+b) False
+
+ANSWER: b) False
+
+Comment: Equivalence partitioning and boundary value analysis techniques can be applied to all levels of testing.
+
+7. A particular text field accepts only alpha characters. Which of the following is invalid equivalence partition?
+
+a) APPLE
+b) apple
+c) aPPle
+d) a2pple
+
+ANSWER: d) a2pple
+
+8. Which of the following is not a specification based technique?
+
+a) Cause-effect table
+b) State transition testing
+c) Decision coverage
+d) Use case testing
+
+ANSWER: c) Decision coverage
+
+Comment: Decision coverage is white box testing technique.
+
+9. The speedometer of a car uses 7 colors to show the speed. Each color covers a range of 20 km, with an operating minimum and maximum of 0 and 140. Which of the following values is LEAST likely to have been identified when applying the boundary value test design technique?
+
+a) -1
+b) 0
+c) 7
+d) 121
+
+ANSWER: c) 7
+
+10. A on line bus reservation system asks number of seats to be reserved by user where user can reserve seats till its capacity will be full. If a tester wants to test that particular field using boundary value, what do you think will be a correct set of input values?
+
+a) 1, 2, capacity -1, capacity, capacity + 1
+b) 0, 1, capacity, capacity + 1
+c) 0, 1, 2, capacity + 1, a very large number
+d) 0, 1, 10, 100, capacity, capacity+1
+
+ANSWER: b) 0, 1, capacity, capacity + 11
+
+11. To pass an Exam, a candidate has to score minimum of 50 marks in order to clear the exam. The maximum that he can score is 100 marks. Identify the Valid Equivalence values if the student passes the exam.
+
+a) 50,58,75
+b) 49,50,51
+c) 52,60,99
+d) 0,15,50
+
+ANSWER: c) 52,60,99
+
+
+12. Which of the following values for age are in the same equivalence partition?
+If you are less than 18, you are too young to be registered for program
+Between 18 and 50 inclusive, you will receive a 20% discount.
+Anyone over 50 is not eligible for a discount.
+
+a) 17, 18, 19
+b) 51, 52, 53
+c) 18, 49, 50
+d) 17, 49, 51
+
+13. What is an equivalence partition?
+
+a) A set of test cases for testing classes of objects
+b) An input or output range of values such that only one value in the range becomes a test case
+c) An input or output range of values such that each value in the range becomes a test case
+d) An input or output range of values such that every tenth value in the range becomes a test case.
+
+View Answer / Hide Answer
+
+ANSWER: b) An input or output range of values such that only one value in the range becomes a test case
+
+Difference between Usecase and testscenario , testcase?
+use case is a detailed description of how system intercats with the external
+entity as users to accomplish a goal
+
+it focus on features and functionality from user prespective
+
+it is used to understand the user interactions and  system behaviours
+
+test case is a set of condition under which a tester will determine if a system behaves as intended
+it focus on validaing specific aspects of the system for funationality, performance, security etc,
+and correctness of the software
+ it is used to test the system meets the requirements specified and behaves correctly
+
+test scenario is a high level description of test  which foucs on broder aspects
+of system's behaveoir covering mulitple funcationalitiea and interactions
+it is more detailed than test cases but less detsiled than individual
+test cases 
+it is created often during the test planning to define the scope
+of the testing
+
+
+Deifference betwwen severity priority?
+
+Severity and Priority:
+
+Severity:
+
+Definition: Severity refers to the impact or seriousness of a defect on 
+the system's functionality.
+
+Example: Suppose there's a defect in an e-commerce website where users 
+are unable to complete the checkout process. This defect has high severity 
+because it directly affects the core functionality of the system, preventing
+ users from making purchases.
+
+Priority:
+Definition: Priority relates to the order in which defects need to be 
+addressed, considering factors like business impact and urgency.
+
+Example: In the e-commerce website scenario, if there's also a defect 
+where the product images are not displaying correctly, it might have a 
+lower severity compared to the checkout issue. However, if the upcoming
+ holiday season is approaching, fixing the image display issue might have 
+a higher priority to ensure a positive user experience during a peak period.
+
+Summary:
+
+Severity: How serious is the impact of the defect on the system?
+Priority: In what order should the defects be addressed based on business 
+impact and urgency?
+Both severity and priority help teams in managing and addressing defects 
+effectively, allowing them to prioritize their efforts and resources
+
+Sure, let's consider examples for both high and low severity and priority:
+
+High Severity and High Priority:
+
+Example: A critical security vulnerability is discovered in an online 
+banking application, exposing users' sensitive information. This has a 
+high severity because it poses a significant risk to user data. It also 
+has high priority because addressing security issues promptly is crucial 
+to prevent potential harm to users and maintain the integrity of the system.
+
+High Severity and Low Priority:
+Example: A cosmetic issue is identified on the website's help page where 
+the font color slightly mismatches the background color. This has a high 
+severity because it affects the visual appearance, but it has a low priority
+ as it doesn't impact the core functionality or security of the system. It
+ might be addressed in a future release.
+
+Low Severity and High Priority:
+
+Example: A minor glitch is found on the login page of an e-commerce website 
+where the "Forgot Password" link is not aligned properly. Although it has 
+low severity since it doesn't affect user login functionality, it has high 
+priority if there's an upcoming marketing campaign, and the login page 
+needs to be visually polished before the campaign launch.
+
+Low Severity and Low Priority:
+
+Example: A typo is discovered in an informational pop-up that appears after
+ a user submits a form. The typo does not impact the system's functionality
+ or user experience significantly. It has low severity and low priority and
+ might be scheduled for correction during routine maintenance.
+
+These examples illustrate how severity and priority can vary independently 
+based on the nature of the defect and the context of the overall system and 
+project timelines.
+
+
+Difference between Waterfall model ,V & V model and Agile
+
+The key difference between Agile vs. Waterfall is that Waterfall breaks 
+down software development into 
+isolated phases that flow into each other, while Agile advocates iterative
+ development cycles in which multiple lifecycle phases can run in parallel.
+
+Agile emphasizes flexibility, collaboration, and iterative delivery, while 
+V-model follows a sequential and phase-based approach with associated 
+testing phases. Agile allows for continuous feedback and adaptation, 
+while V-model ensures verification and validation at each development phase.
+
+who is scrum master
+
+A Scrum master is a professional who leads a team through a project using 
+Agile project management techniques. A Scrum Master facilitates all the 
+communication and 
+collaboration between leadership and team players to ensure a successful
+ outcome.
+
+The scrum master serves to facilitate scrum to the larger team by ensuring 
+the scrum framework is followed. He or she is committed to the scrum
+ methodology, agile principles, and best practices—but should also remain
+ flexible and open to opportunities for the team to improve their workflow.
+
+what is scrum call
+
+The daily scrum meeting is a "tell-all" session where the scrum team 
+shares their accomplishments and future goals. This makes it simple for 
+the team to develop an understanding of how quickly and effectively the 
+project is moving
+
+what is retrospective meeting
+
+A retrospective meeting, or retro, is a structured session that 
+gives teams time to reflect on a completed project. It allows a team 
+and individuals to highlight both the successes and failures of a project,
+ identify areas that need improvement, and reflect on the project as a 
+whole.
+
+
+
+
+
