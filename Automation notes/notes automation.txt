@@ -1,0 +1,892 @@
+package com.Login;
+ 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+ 
+public class Openbrowser {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://googlechromelabs.github.io/chrome-for-testing/");
+	}
+ 
+}
+
+id name classname LinkText PartialL... by Plabani (Guest)
+Plabani (Guest)
+10:50 AM
+id
+name
+classname
+LinkText
+PartialLinkText
+Xpath
+Css selectors
+tagname
+ 
+findelement
+findelements
+ 
+Xpath:
+ 
+Absol
+ 
+Xpath by attribute:
+ 
+//tagname[@attribute='Value']
+//input[@name='username']
+//input[@placeholder='Username']
+//button[@type='submit']
+Xpath by text: //tagname[text()='Value'] ... by Plabani (Guest)
+Plabani (Guest)
+10:54 AM
+Xpath by text:
+//tagname[text()='Value']
+//input[text()='Forgot your password? ']
+
+xpath by contains: is a dynamic values  if i only give less word that the value it will match the results of the search
+//p[contains(text(),'Below is where you')] by Plabani (Guest)
+Plabani (Guest)
+11:00 AM
+//p[contains(text(),'Below is where you')]
+(//a[contains(text(),'Changelog')])[1] by Plabani (Guest)
+Plabani (Guest)
+11:02 AM
+(//a[contains(text(),'Changelog')])[1]
+has context menu
+
+package com.Login;
+ 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+ 
+public class Openbrowser {
+ 
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+ 
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	Thread.sleep(5000);
+	driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
+	driver.findElement(By.name("password")).sendKeys("admin123");
+//driver.findElement(By.xpath("//button[@type='submit']")).click();
+	driver.findElement(By.xpath("//p[text()='Forgot your password? ']")).click();
+	/*driver.navigate().forward();
+	driver.navigate().back();
+	driver.navigate().refresh();
+		driver.manage().window().maximize();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println(driver.getPageSource());
+	Thread.sleep(3000);
+	driver.close();*/
+	}
+ 
+}
+
+
+
+CSS Selector
+
+tag name
+
+linktext
+
+Partial Link text
+
+this is for geting the return typr of "find element" not elements.
+WebElement element=driver.findElement(By.xpath("//p[text()='Forgot your password? ']"));
+	System.out.println(element.getText());
+	element.click();
+
+where as "find elements" will give list of web elements as a return type.
+
+public class Openbrowser {
+ 
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+ 
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://www.google.com/");
+	Thread.sleep(5000);
+	driver.findElement(By.name("q")).sendKeys("QSpiders");
+	Thread.sleep(5000);
+ 
+	
+	List<WebElement> suggestion=driver.findElements(By.xpath("//span[contains(text(),'QSpiders')]"));
+
+	Thread.sleep(5000);
+ 
+int count=	suggestion.size();
+Thread.sleep(5000);
+ 
+System.out.println(count);
+
+	for(int i=0;i<count;i++)
+	{
+		Thread.sleep(5000);
+ 
+WebElement element1=		suggestion.get(i);
+Thread.sleep(5000);
+ 
+System.out.println(element1.getText());
+	}
+
+sycnoization
+implictwait 
+explcit wait we use driverwait
+
+package com.Login;
+ 
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+ 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+ 
+public class Openbrowser {
+ 
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+ 
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	/*Thread.sleep(5000);
+	driver.findElement(By.name("q")).sendKeys("QSpiders");
+	Thread.sleep(5000);
+ 
+	
+	List<WebElement> suggestion=driver.findElements(By.xpath("//span[contains(text(),'QSpiders')]"));
+
+	Thread.sleep(5000);
+ 
+int count=	suggestion.size();
+Thread.sleep(5000);
+ 
+System.out.println(count);
+
+	for(int i=0;i<count;i++)
+	{
+		Thread.sleep(5000);
+ 
+WebElement element1=		suggestion.get(i);
+Thread.sleep(5000);
+ 
+System.out.println(element1.getText());
+	}
+	*/
+
+
+
+
+
+
+	driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
+	driver.findElement(By.name("password")).sendKeys("admin123");
+driver.findElement(By.xpath("//button[@type='submit']")).click();
+WebDriverWait wait=new WebDriverWait(driver,5);
+wait.until(ExpectedConditions.titleContains("OrangeHRM"));
+System.out.println("Page Loaded");
+ 
+ 
+ 
+//	WebElement element=driver.findElement(By.xpath("//p[text()='Forgot your password? ']"));
+/*	System.out.println(element.getText());
+	element.click();
+	driver.navigate().forward();
+	driver.navigate().back();
+	driver.navigate().refresh();
+		driver.manage().window().maximize();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println(driver.getPageSource());
+	Thread.sleep(3000);
+	driver.close();*/
+	}
+ 
+}
+
+dropdown 
+
+public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+ 
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	driver.get("file:///C:/Users/Plabani/OneDrive/Documents/prac.html");
+WebElement element=	driver.findElement(By.xpath("//select[@id='slv']"));
+	Select sel=new Select(element);
+	sel.selectByIndex(2);
+	Thread.sleep(2000);
+	sel.selectByVisibleText("Ac");
+	sel.deselectAll();
+List<WebElement> li=sel.getOptions();
+int count=li.size();
+System.out.println(count); 
+====================================
+screen shot
+commos io install
+https://mvnrepository.com/artifact/commons-io/commons-io/2.11.0
+
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.11.0</version>
+</dependency>
+
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	driver.get("file:///C:/Users/Plabani/OneDrive/Documents/prac.html");
+	TakesScreenshot scr=(TakesScreenshot)driver;
+	File src=scr.getScreenshotAs(OutputType.FILE);
+	File dest=new File("C:\\Users\\Plabani\\Downloads\\chk\\Screenshot.png");
+	FileUtils.copyFile(src, dest);
+
+WebElement element=	driver.findElement(By.xpath("//select[@id='slv']"));
+	Select sel=new Select(element);
+	sel.selectByIndex(2);
+	Thread.sleep(2000);
+	sel.selectByVisibleText("Ac");
+	sel.deselectAll();
+List<WebElement> li=sel.getOptions();
+int count=li.size();
+System.out.println(count);
+
+===================
+switch to tab
+
+String parent_handle= driver.getWindowHandle();
+System.out.println(parent_handle);
+Set<String> handles = driver.getWindowHandles();
+System.out.println(handles);
+for(String handle1:handles)
+    if(!parent_handle.equals(handle1))
+    {
+        driver.switchTo().window(handle1);
+        break;
+
+}
+
+=======================================
+actions class
+
+[9:34 AM] Plabani (Guest)
+https://demo.guru99.com/test/simple_context_menu.html
+[9:34 AM] Plabani (Guest)
+https://demo.seleniumeasy.com/drag-and-drop-demo.html
+[9:35 AM] Plabani (Guest)
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+
+	WebDriver driver=new ChromeDriver();
+
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+	driver.get("https://demowebshop.tricentis.com/fiction");
+
+WebElement element=	driver.findElement(By.xpath("(//a[contains(text(),'Computers')])[1]"));
+ 
+Actions act=new Actions(driver);
+ 
+act.moveToElement(element).build().perform();						
+
+
+=================================
+
+alert class
+
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	driver.get("file:///C:/Users/Plabani/OneDrive/Desktop/HTML/Javascript1.html");
+	driver.findElement(By.xpath("//button[text()='Click Me!']")).click();
+	Alert a=driver.switchTo().alert();
+	System.out.println(a.getText());
+	a.accept();
+	//a.dismiss();				
+
+
+=================
+
+frame
+use the ppt 
+
+============
+
+indepented and depended
+
+[2:54 PM] Plabani (Guest)
+//p[text()='C#']/..//a[text()='Changelog']
+[2:56 PM] Plabani (Guest)
+isselected()
+[2:56 PM] Plabani (Guest)
+isdisabled()
+[2:59 PM] Plabani (Guest)
+type of error msg
+[3:01 PM] Plabani (Guest)
+Java scriptexector
+
+
+============================================
+
+test
+
+What is synchronization?
+
+The Automation test script speed is very high compared to web application 
+speed ,To make proper Automation script the speed of web application and 
+automation test script should perfectly match this process is called 
+Synchronization . If 
+Synchronization is not proper than we will get "No Such Element Exception "
+
+Difference between Implicit wait and explicit wait?
+
+Implicit Wait directs the Selenium WebDriver to wait for a certain measure 
+of time before throwing an exception. Once this time is set, WebDriver will 
+wait for the element before the exception occurs.
+
+Once the command is run, Implicit Wait remains for the entire duration for 
+which the browser is open. It’s default setting is 0, and the specific wait 
+time needs to be set by the following protocol.
+
+To add implicit waits in test scripts, import the following package.
+
+import java.util.concurrent.TimeUnit;
+
+Implicit Wait Syntax
+
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+we have to specify the time unit as it can take sec, min, ms, ns
+
+
+Explicit Wait command, 
+the WebDriver is directed to wait until a certain condition occurs before 
+proceeding with executing the code.
+
+Setting Explicit Wait is important in cases where there are certain elements 
+that naturally take more time to load. If one sets an implicit wait command, 
+then the browser will wait for the same time frame before loading every 
+web element. This causes an unnecessary delay in executing the test script.
+
+In order to declare explicit wait, one has to use ExpectedConditions. The 
+following Expected Conditions can be used in Explicit Wait.
+
+elementToBeClickable, visibility of the element etc.,
+
+it is using sec for the wait time
+
+
+Methods present in webdriver?
+
+Selenium WebDriver is an interface that defines a set of methods. However, 
+implementation is provided by the browser specific classes. Some of the 
+implementation classes are AndroidDriver, ChromeDriver, FirefoxDriver, 
+InternetExplorerDriver, IPhoneDriver, SafariDriver etc. The WebDriver 
+main functionality is to control the browser. It even helps us to select 
+the HTML page elements 
+and perform operations on them such as click, filling a form fields etc.
+
+SearchContext is the topmost interface in Selenium API which has two 
+methods - findElement() and findElements(). Selenium WebDriver 
+interface has many abstract methods like get(String url), quit(), 
+close(), getWindowHandle(), getWindowHandles(), getTitle() etc. 
+WebDriver has nested interfaces like Window, Navigation, 
+Timeouts etc. These nested interfaces are used to perform 
+operations like back(), forward() etc.
+
+Method	Description
+get(String url)	
+This method will launch a new browser and opens the given 
+URL in the browser instance.
+
+getWindowHandle()	
+It is used to handle single window i.e. main window. It return 
+type is string. It will returns browser windlw handle from 
+focused browser.
+
+getWindowHandles()	
+It is used to handle multiple windows. It return type is Set. 
+It will returns all handles from all opened browsers by Selenium
+ WebDriver.
+
+close()	
+This command is used to close the current browser window
+ which is currently in focus.
+
+quit()	
+This method will closes all the browsers windows which are 
+currently opened and terminates the WebDriver session.
+
+getTitle()	
+This method is used to retrieve the title of the webpage 
+the user currently working on.
+
+List of classes implementing WebDriver
+
+The major implementation classes of WebDriver interface are 
+ChromeDriver, EdgeDriver, FirefoxDriver, InternetExplorerDriver etc. 
+Each driver class corresponds to a browser. We simply create the object 
+of the driver classes and work with them.
+
+Class	Description
+ChromeDriver	It helps you to execute Selenium Scripts on Chrome browser.
+FirefoxDriver	It helps you to execute Selenium Scripts on Firefox browser.
+InternetExplorerDriver	It helps you to execute Selenium Scripts on InternetExplorer browser.
+
+List of Commands on WebElement
+Selenium WebElement represents an HTML 
+element. We can get an instance of WebElement using findElement() 
+method and then perform specific actions such as click, submit etc. 
+Some of the commonly used WebElement methods are:
+
+Command	Description	Syntax
+findElement()	
+This method finds the first element within the current web 
+page by using given locator.	
+WebElement element = driverObject.findElement(By.locator(“value”));
+
+sendKeys()	
+This method enters a value in to an Edit Box or Text box.	
+driver.findElement(By.elementLocator(“value”)).sendkeys(“value”);
+
+clear()	
+It clears the Value from an Edit box or Text Box.	
+driverObject.findElement(By.locatorname(“value”)).clear();
+
+click()	
+It clicks an Element (Button, Link, Checkbox) etc.	
+driverObject.findElement(By.ElementLocator(“LocatorValue”)).click();
+
+methods present in webelementi?
+https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebElement.html
+
+what is webdriver?
+webdriver is framework for browser automation that provides a 
+programming interface to interact with web browser. it  allows you to write
+scripts in various programming languages to automate browser actions, simluate
+user interactions and perform functional testing of web application
+
+what is remote webdriver?
+https://www.browserstack.com/guide/difference-between-selenium-remotewebdriver-and-webdriver#:~:text=Remote%20WebDriver%20consists%20of%20a,FirefoxDriver%2C%20IEDriver%2C%20or%20ChromeDriver.
+
+what is chromedriver?
+WebDriver is an open source tool for automated testing of webapps across 
+many browsers. It provides capabilities for navigating to web pages, user 
+input, JavaScript execution, and more. ChromeDriver is a standalone server 
+that implements the W3C WebDriver standard.
+
+what is /.. ?
+this is used to navigate to the parent node of the current node 
+
+what is // ?
+this is used for selecting nodes from the current node, no matter where
+they are in the document. it is more general and fexiable way to navigate
+throught the document
+
+what is / ?
+this is used for selecting immediate child of the current node 
+this / and // is depends oon whether you want to specify a direct child or
+navvigate more fexiable throught documnet while /.. is to move up the
+hierarchy to the parent node.
+
+write any code to using gettext() and getattribute()?
+package com.login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class test7GetTextANDGetAttribute {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "D:\\hexaware java mysql training\\JAVA\\JAVA Practice\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.example.com/");
+		
+		WebElement headingElement = driver.findElement(By.cssSelector("h1"));
+		
+		String headingText = headingElement.getText();
+		System.out.println("Text using getText(): " + headingText);
+		
+		String classAttributeValues = headingElement.getAttribute("class");
+		System.out.println("Value of 'class' attribute using getAttribute(): " + classAttributeValues);
+		
+		//driver.quit();
+
+	}
+
+}
+
+
+how to use locator tag?
+It seems there might be a bit of confusion regarding the term "locator tag" as there is no specific locator called "tag" in the context of Selenium WebDriver. However, if you are referring to using tag names as locators, I'll provide an explanation below.
+
+In Selenium WebDriver, locators are used to identify and interact with elements on a web page. Commonly used locators include:
+
+1. *ID:*
+   - Example: driver.findElement(By.id("elementId"))
+
+2. *Name:*
+   - Example: driver.findElement(By.name("elementName"))
+
+3. *Class Name:*
+   - Example: driver.findElement(By.className("elementClassName"))
+
+4. *XPath:*
+   - Example: driver.findElement(By.xpath("//div[@class='example']"))
+
+5. *CSS Selector:*
+   - Example: driver.findElement(By.cssSelector("input#username"))
+
+6. *Link Text:*
+   - Example: driver.findElement(By.linkText("Click Here"))
+
+7. *Partial Link Text:*
+   - Example: driver.findElement(By.partialLinkText("Partial"))
+
+8. *Tag Name:*
+   - Example: driver.findElement(By.tagName("a"))
+
+If by "locator tag" you meant using the tag name as a locator, you can use the By.tagName method. For example, if you want to locate all the links (<a> elements) on a page, you can use:
+
+java
+List<WebElement> links = driver.findElements(By.tagName("a"));
+
+for (WebElement link : links) {
+    System.out.println(link.getText());
+}
+
+
+This code finds all <a> elements on the page and prints their text content. Remember that using tag names alone might not be unique enough in some scenarios, so it's essential to choose locators that uniquely identify the element you want to interact with.
+
+How to switch from parent to child tab?
+
+To switch from the parent tab to a child tab in Selenium WebDriver, you can use the windowHandles method to get the handles of all open tabs/windows and then switch to the desired tab by its handle. Here's an example in Java:
+
+java
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.Set;
+
+public class SwitchTabExample {
+    public static void main(String[] args) {
+        // Set the path to the ChromeDriver executable
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
+
+        // Create a new instance of ChromeDriver
+        WebDriver driver = new ChromeDriver();
+
+        // Navigate to a webpage that opens a new tab (e.g., a link with target="_blank")
+        driver.get("https://www.example.com");
+
+        // Get the handle of the parent tab
+        String parentHandle = driver.getWindowHandle();
+
+        // Perform an action that opens a new tab (e.g., clicking a link with target="_blank")
+        WebElement newTabLink = driver.findElement(By.linkText("Open in New Tab"));
+        newTabLink.click();
+
+        // Get all open window handles
+        Set<String> allHandles = driver.getWindowHandles();
+
+        // Switch to the child tab
+        for (String handle : allHandles) {
+            if (!handle.equals(parentHandle)) {
+                driver.switchTo().window(handle);
+                break;
+            }
+        }
+
+        // Now you are in the child tab, perform actions as needed
+
+        // Close the child tab
+        driver.close();
+
+        // Switch back to the parent tab
+        driver.switchTo().window(parentHandle);
+
+        // Close the parent tab
+        driver.close();
+    }
+}
+
+
+In this example:
+- driver.getWindowHandle() gets the handle of the parent tab.
+- driver.getWindowHandles() gets all open window handles.
+- The loop iterates through the handles to find the child tab and switches to it using driver.switchTo().window(handle).
+- After performing actions in the child tab, you can switch back to the parent tab and close both tabs if needed.
+
+Make sure to replace "path/to/chromedriver.exe" with the actual path to your ChromeDriver executable.
+
+
+how to switch from child frame to main frame?
+You can switch to the main web page from child iframe using method 
+switchTo(). defaultContent(). Additionally, you can use a frame index to 
+switch to dynamic frames. Because they do not have a fixed value for id or 
+name attribute.
+
+how to sitch frame to main webpage?
+The defaultContent(); in Selenium
+switchTo(). defaultContent(); in selenium helps to switch the context to 
+top most frame which is main page. Regardless of your current context, you 
+can switch to the main page using the driver. switchTo().
+
+
+Write a code to verify if emenet isenabled()?
+
+// Check that “Google Search box” is enabled or not. If Search box is enabled, it will return true. 
+     WebElement searchBox = driver.findElement(By.xpath(“//input[@name=’q’]”)); 
+   
+   if(searchBox.isEnabled()) 
+   { 
+      System.out.println(“Search box is enabled. Return: ” +searchBox.isEnabled()); 
+   } 
+   else 
+   { 
+      System.out.println(“Search box is disabled. Return: ” +searchBox.isEnabled()); 
+   } 
+
+
+Right click and down arrow(Robot Class)?
+robot.keyPress(KeyEvent.VK_ALT);
+robot.keyRelease(KeyEvent.VK_ALT);
+robot.delay(1); // seems to be required for the event to be registered
+robot.keyPress(KeyEvent.VK_ALT);
+robot.keyPress(KeyEvent.VK_LEFT);
+robot.keyRelease(KeyEvent.VK_LEFT);
+robot.keyRelease(KeyEvent.VK_ALT);
+for right click we use the mouse function has button3 mask down
+InputEvent.BUTTON3_DOWN_MASK : For mouse right-click
+for arrow down use vk down.
+
+
+for scroll down till a item is visible 
+WebElement element = driver.findElement(By.xpath("//span[text()='POP 8 (Gravity Black,(8GB*+64GB)| 90Hz Punch Hole Display with Dynamic Port & Dual Speakers with DTS| 5000mAh Battery |10W Type-C| Side Fingerprint Sensor| Octa-Core Processor']"));
+((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+
+
+============================================================
+
+page object model
+
+package com.Login;
+ 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+ 
+public class LoginPage {
+	//Declaration
+	@FindBy(name="username")
+	public WebElement textUsername;
+
+	@FindBy(name="password")
+	public WebElement textPassword;
+
+@FindBy(xpath="//button[@type='submit']")
+	public WebElement buttonLogin;
+ 
+//Initilization
+ 
+public LoginPage(WebDriver driver)
+{
+	PageFactory.initElements(driver, this);
+}
+ 
+//Utilization
+ 
+public void enterUsername(String str)
+{
+textUsername.sendKeys(str);
+}
+ 
+ 
+public void enterPassword(String str)
+{
+textPassword.sendKeys(str);
+}
+ 
+public void clickLogin()
+{
+	buttonLogin.click();
+}
+ 
+ 
+}
+
+testcase file
+
+package com.Login;
+ 
+import java.util.concurrent.TimeUnit;
+ 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+ 
+public class LoginTest {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		LoginPage lp=new LoginPage(driver);
+		lp.enterUsername("Admin");
+		lp.enterPassword("Password123");
+		lp.clickLogin();
+	}
+ 
+}
+
+==============================
+testng framework
+
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.5</version>
+    <scope>test</scope>
+</dependency>
+
+go to ecplise marketplace and install testng for ecplise
+then install all the things
+and install the dependency
+then build path config build path and  add libaries and add testng
+
+data provider
+package Pages;
+ 
+import org.testng.Reporter;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+ 
+public class Login {
+	@DataProvider
+	public Object[][] getData()
+	{
+			Object[][] Data=new Object[2][2];
+			Data[0][0]="UserA";
+			Data[0][1]="PassA";
+			Data[1][0]="UserB";
+			Data[1][1]="PassB";
+ 
+		return Data;
+	}
+	@Test(dataProvider="getData")
+	public void test(Object un,Object pw)
+	{
+		Reporter.log(un + "" + pw,true);
+	}
+ 
+}
+
+enabled true, false and alwaysrun true
+@Test(enabled = false)
+	public void Sum(int a,int b)
+	{
+		int c;
+		System.out.println("Execute-2");
+	}
+	@Test(alwaysRun = true)
+	public void Multi()
+	{
+		System.out.println("Execute-1");
+	}	
+
+
+===================================
+testngOrange.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+<!--  <parameter name="Username" value="admin" />
+  <parameter name="Password" value="admin123" />-->
+  <classes>
+      <class name="com.orangehrm.OrangeHRMDataProvider"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+=========================================
+testng.xml for smoke and sanity
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <run>
+  <include name="Smoke"/>
+  <include name="Sanity"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="com.login.PraticeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+=============================================
+
+cucumber dependency
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+<groupId>io.cucumber</groupId>
+<artifactId>cucumber-java</artifactId>
+<version>6.9.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>4.13.1</version>
+<scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+<dependency>
+<groupId>io.cucumber</groupId>
+<artifactId>cucumber-junit</artifactId>
+<version>6.9.1</version>
+<scope>test</scope>
+</dependency>
+
+go to ecplise marketplace and type cucumber and install it
+
+testrunner
+@RunWith(Cucumber.class)
+@CucumberOptions(features="C:\\Users\\Plabani\\eclipse-workspace\\Hexa_Orange\\src\\test\\resources\\Feature"
+,glue = "Stepdef",plugin = "html:target/cucumber.html"
+)
+
+we use this code above the class testrunner
+
+[10:15 AM] Plabani (Guest)
+https://www.includehelp.com/mcq/selenium-mcqs.aspx
+[10:16 AM] Plabani (Guest)
+https://www.onlineinterviewquestions.com/selenium-mcq/
+[10:17 AM] Plabani (Guest)
+https://nhlink.net/education/120-top-selenium-multiple-choice-questions-and-answers
+
+
